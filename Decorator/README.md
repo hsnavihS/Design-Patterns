@@ -9,7 +9,7 @@ The shop wants to be able to add new ingredients and drinks in the best way poss
 ### Bad approach #1
 Create a class for each possible combination of drink and condiment(s).
 Eg: `Espresso`, `EspressoWithMilk`, `EspressoWithMilkAndSugar`, `EspressoWithMilkAndSugarAndChocolate`, etc.
-This creates a class explosion, which means that we have tons of classes to maintain.
+This results in way too many classes and we end up with a system that is impossible to scale and maintain. This is known as a class explosion.
 
 ### Bad approach #2
 All condiments can be represented as booleans, for example: hasMilk(), hasSugar(), hasChocolate() etc.
